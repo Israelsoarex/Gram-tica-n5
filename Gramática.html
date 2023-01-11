@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Gramática N5</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="pages.js"></script>
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img src="logo.png" alt="" class="logo"></img></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </header>
+    <div id="ham">
+    <div class="hamburger">
+        <ul id="ul">
+            <li><a href="">Gramática</a></li>
+            <li><a href="">Pronúncia</a></li>
+            <li><a href="">Recurso</a></li>
+            <li><a href="">Sobre</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="box"id="box">    
+        <table class="elements">
+            <tr>
+               <td><input type="text" placeholder="Procurar..." class="search"></td>
+               <td><i class="fa fa-search" aria-hidden="true"></i></td>
+            </tr>
+        </table>
+    </div>
+    <div class="square">
+        <div class="img-last">
+        <img src="N5.jpg" alt="">
+        <span id="tag">ÚLTIMO POST</span>
+        </div>
+    </div>
+    <div class="square1"></div>    
+    <div id="up"><b>↑</b></div>
+    <footer>
+        <div>
+            <a href="https://instagram.com/israel_soarex?igshid=NTdlMDg3MTY="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@Israelsoarex"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p>高橋イスラエル</p>
+    </footer>
+    <script>
+        view = 0;
+        let bar = document.querySelector("#bar");
+        let box = document.querySelector("#box");
+        let hamburger = document.querySelector(".hamburger");
+        let square1 = document.querySelector(".square1");
+        let square = document.querySelector(".square");
+        
+        bar.addEventListener("click",justOpen)
+        function justOpen() {
+            if(view == 0) {
+                view = 1;
+                hamburger.style.transform = "translateX(0)";
+                bar.style.background = "#fff";
+                bar.style.color = "#009879";
+            }else {
+                view = 0;
+                hamburger.style.transform = "translateX(100%)";
+                bar.style.background = "#009879";
+                bar.style.color = "#fff";
+            }
+        }
+        const scrollToTop = ()=>{
+            window.scroll({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+        document.querySelector("#up").onclick = scrollToTop;
+        function allPost() {
+            for(let i = pageList.length - 2; i >= 0; i--){
+        console.log(pageList[i].name);
+        square1.innerHTML += `
+            <div class="square">
+            <div class="img-last">
+            <img src="N5.jpg" alt="">
+            </div>
+            <span id="last"><a href="${pageList[i].path}">${pageList[i].name}</a></span>
+            </div>   
+        `;
+    }
+        }
+allPost()
+        function lastPost() {
+                a = pageList.length - 1 ;
+                square.innerHTML +=`<span id="last"><a href="${pageList[a].path}">${pageList[a].name}</a></span>`;
+}
+lastPost()
+    </script>
+</body>
+</html>
