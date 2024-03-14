@@ -5,7 +5,7 @@ let pageList = [
     },
     {
         name:"Partícula も (mo)",
-        path:"Particulaも.html",
+        path:"particulaも.html",
     },
     {
         name:"Partícula が (ga) Marcador de sujeito",
