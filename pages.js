@@ -1,35 +1,429 @@
 let pageList = [
     {
-        name:"Particula は (wa) Marcador de tópico de",
-        path:"Particulaは.html",
+        name: "Partícula は (wa)",
+        path: "Particulaは.html",
+        imgLink: 'https://i.ibb.co/6RgGs1W/Particula-Wa.png',
     },
     {
-        name:"Partícula も (mo)",
-        path:"particulaも.html",
+        name: "Partícula も (mo)",
+        path: "Particulaも.html",
+        imgLink: 'https://i.ibb.co/mR1MQkV/Particula-Mo.png'
     },
     {
-        name:"Partícula が (ga) Marcador de sujeito",
-        path:"Particulaが.html",
+        name: "Partícula が (ga)",
+        path: "Particulaが.html",
+        imgLink: 'https://i.ibb.co/yNk3Tzt/Particula-Ga.png'
     },
     {
-        name:"Partícula で (de)",
-        path:"partículaで.html",
+        name: "Partícula で (de)",
+        path: "partículaで.html",
+        imgLink: 'https://i.ibb.co/dJPQZ1d/Particula-De.png'
     },
     {
-        name:"Partícula と (to)",
-        path:"partículaと.html",
+        name: "Partícula と (to)",
+        path: "partículaと.html",
+        imgLink: 'https://i.ibb.co/YP0n85t/Particula-To.png'
     },
     {
-        name:"Partícula へ (e)",
-        path:"partículaへ.html",
+        name: "Partícula に (ni)",
+        path: "partículaに.html",
+        imgLink: 'https://i.ibb.co/Y3cCq5C/Particula-Ni.png'
     },
     {
-        name:"Partícula を (o)",
-        path:"partículaを.html",
+        name: "Partícula へ (e)",
+        path: "partículaへ.html",
+        imgLink: 'https://i.ibb.co/TPM5crR/Particula-He.png'
+    },
+    {
+        name: "Partícula を (o)",
+        path: "partículaを.html",
+        imgLink: 'https://i.ibb.co/z2Dvkv0/Particula-Wo.png'
+    },
+    {
+        name: "Particula か (ka)",
+        path: "particulaか.html",
+        imgLink: 'https://i.ibb.co/zZSn1b1/Particula-Ka.png'
+    },
+    {
+        name: "Partícula ね (ne)",
+        path: "particulaね.html",
+        imgLink: 'https://i.ibb.co/XL8F5mb/Particula-Ne.png'
+    },
+    {
+        name: "Partícula の (no)",
+        path: "particulaの.html",
+        imgLink: 'https://i.ibb.co/9ZNNwY8/Particula-No.png'
+    },
+    {
+        name: "Partícula や (ya)",
+        path: "",
+        imgLink: 'https://i.ibb.co/vmn42Qk/20240413-154633.png'
+    },
+    {
+        name: "Particula よ (yo)",
+        path: "",
+        imgLink: 'https://i.ibb.co/ckXgXXQ/20240413-154704.png'
+    },
+    {
+        name: "Partícula から (kara)",
+        path: "",
+        imgLink: 'https://i.ibb.co/Gk1qJRV/20240413-154809.png'
+    },
+    {
+        name: "Partícula ので (node)",
+        path: "",
+        imgLink: 'https://i.ibb.co/F8TqfxP/20240413-154832.png'
+    },
+    {
+        name: "Partícula お/ご (o/go)",
+        path: "",
+        imgLink: 'https://i.ibb.co/fHZVt4p/20240413-154917.png'
+    },
+    {
+        name: "Partícula だけ (dake)",
+        path: "",
+        imgLink: 'https://i.ibb.co/p1FFMqj/20240413-154944.jpg'
+    },
+    {
+        name: "Partícula けど (kedo)",
+        path: "",
+        imgLink: 'https://i.ibb.co/HBxVqgT/20240413-155023.png'
+    },
+    {
+        name: "Partícula のです (nodesu)",
+        path: "",
+        imgLink: 'https://i.ibb.co/8bCs7sS/20240413-155055.png'
+    },
+    {
+        name: "partícula まで (made)",
+        path: "",
+        imgLink: 'https://i.ibb.co/VjHfHzR/20240413-155119.png'
+    },
+    {
+        name: "Partícula な〜 (naa)",
+        path: "",
+        imgLink: 'https://i.ibb.co/gTB3bxn/20240413-155137.png'
+    },
+    {
+        name: "Partícula か〜か (ka-ka)",
+        path: "",
+        imgLink: 'https://i.ibb.co/TB5hTMt/20240413-155203.png'
+    },
+    {
+        name: "Partícula たり (tari-tari)",
+        path: "",
+        imgLink: 'https://i.ibb.co/hssz8NH/20240413-155236.png'
+    },
+    {
+        name: "Partícula けれども (keredomo)",
+        path: "",
+        imgLink: 'https://i.ibb.co/SxQXRbH/20240413-155315.png'
+    },
+    {
+        name: "Partícula より〜方が (yori-houga)",
+        path: "",
+        imgLink: 'https://i.ibb.co/VD3J8zS/20240413-155552.png'
+    },
+    {
+        name: "Adjetivos い (i)",
+        path: "",
+        imgLink: 'https://i.ibb.co/YdhDgpb/20240413-155638.png'
+    },
+    {
+        name: "Adjetivos な (na)",
+        path: "",
+        imgLink: 'https://i.ibb.co/w6mH7kg/20240413-155658.png'
+    },
+    {
+        name: "Verbos 動詞 (doushi)",
+        path: "",
+        imgLink: 'https://i.ibb.co/LtBFNVh/20240413-155747.png'
+    },
+    {
+        name: "Conjugação ます (masu)",
+        path: "",
+        imgLink: 'https://i.ibb.co/bvg9PgQ/20240413-155837.png'
+    },
+    {
+        name: "Conjugação たい (tai)",
+        path: "",
+        imgLink: 'https://i.ibb.co/wWwb91S/20240413-155901.png'
+    },
+    {
+        name: "Cópula  だ/です (da/desu)",
+        path: "",
+        imgLink: ''
+    },
+    {
+        name: "Estrutura でしょう/だろう (deshou/darou)",
+        path: "",
+        imgLink: 'https://i.ibb.co/fCKk8yZ/20240413-160006.png'
+    },
+    {
+        name: "Estrutura じゃない (janai)",
+        path: ""
+    },
+    {
+        name: "Conjunção でも (demo)",
+        path: ""
+    },
+    {
+        name: "Sufixo 方 (kata)",
+        path: ""
+    },
+    {
+        name: "Conjugação ましょう (mashou) ",
+        path: ""
+    },
+    {
+        name: "Estrutura ましょうか (mashouka)",
+        path: ""
+    },
+    {
+        name: "Advérbio もう (mou)",
+        path: ""
+    },
+    {
+        name: "Advérbio どうして (doushite)",
+        path: ""
+    },
+    {
+        name: "Conjunção しかし (shikashi)",
+        path: ""
+    },
+    {
+        name: "Advérbio 時 (toki)",
+        path: ""
+    },
+    {
+        name: "Estrutura どんな (donna)",
+        path: ""
+    },
+    {
+        name: "Estrutura があります (ga arimasu)",
+        path: ""
+    },
+    {
+        name: "Estrutura がいます (ga imasu)",
+        path: ""
+    },
+    {
+        name: "Estrutura それから (sorekara)",
+        path: ""
+    },
+    {
+        name: "Advérbio いつも (itsumo)",
+        path: ""
+    },
+    {
+        name: "Advérbio とても (totemo)",
+        path: ""
+    },
+    {
+        name: "Conjunção そして (soshite)",
+        path: ""
+    },
+    {
+        name: "Estrutura どうやって (douyatte)",
+        path: ""
+    },
+    {
+        name: "Estrutura なる (naru)",
+        path: ""
+    },
+    {
+        name: "Advérbio 一緒に (isshou ni)",
+        path: ""
+    },
+    {
+        name: "Estrutura 前に (mae ni)",
+        path: ""
+    },
+    {
+        name: "Advérbio 一番 (ichiban)",
+        path: ""
+    },
+    {
+        name: "Sufixo すぎる (sugiru)",
+        path: ""
+    },
+    {
+        name: "Estrutura に行く (ni iku)",
+        path: ""
+    },
+    {
+        name: "Estrutura にする (ni suru)",
+        path: ""
+    },
+    {
+        name: "Estrutura が欲しい (ga hoshii)",
+        path: ""
+    },
+    {
+        name: "Estrutura 方がいい (hou ga ii)",
+        path: ""
+    },
+    {
+        name: "Estrutura のが下手 (no ga heta)",
+        path: ""
+    },
+    {
+        name: "Estrutura のが上手 (no ga jouzu)",
+        path: ""
+    },
+    {
+        name: "Estrutura のが好き (no ga suki)",
+        path: ""
+    },
+    {
+        name: "Estrutura まだ (mada)",
+        path: ""
+    },
+    {
+        name: "Estrutura まだ〜ていません (mada-teimasen)",
+        path: ""
+    },
+    {
+        name: "Estrutura ないで (naide)",
+        path: ""
+    },
+    {
+        name: "Estrutura をください (wo kudasai)",
+        path: ""
+    },
+    {
+        name: "Estrutura てはいけない (te wa ikenai)",
+        path: ""
+    },
+    {
+        name: "Estrutura ちゃいけない・じゃいけない (cha ikenai / ja ikenai)",
+        path: "" // aqui //
+    },
+    {
+        name: "Estrutura なくてはいけない (nakute wa ikenai)",
+        path: ""
+    },
+    {
+        name: "Estrutura なくちゃ (nakucha)",
+        path: ""
+    },
+    {
+        name: "Estrutura なくてはならない (nakute wa naranai)",
+        path: ""
+    },
+    {
+        name: "Estrutura てある (te aru)",
+        path: ""
+    },
+    {
+        name: "Estrutura ている (te iru)",
+        path: ""
+    },
+    {
+        name: "Estrutura なくていい (nakute ii)",
+        path: ""
+    },
+    {
+        name: "Estrutura てください (te kudasai)",
+        path: ""
+    },
+    {
+        name: "Estrutura てもいい (temo ii)",
+        path: ""
+    },
+    {
+        name: "Estrutura ないでください (naide kudasai)",
+        path: ""
+    },
+    {
+        name: "Estrutura てから (te kara)",
+        path: ""
+    },
+    {
+        name: "Estrutura ないといけない (naito ikenai)",
+        path: ""
+    },
+    {
+        name: "Estrutura つもり (tsumori)",
+        path: ""
+    },
+    {
+        name: "Estrutura 〜たことがある (-ta koto ga aru)",
+        path: ""
+    },
+    {
+        name: "Estrutura 〜はどうですか (wa dou desu ka)",
+        path: ""
+    },
+    {
+        name: "Estrutura の中でＡが一番 (no naka de A ga ichiban)",
+        path: ""
+    },
+    {
+        name: "Estrutura は〜より〜です (wa - yori - desu)",
+        path: ""
     },
 ];
 
-/* {
-        name:"",
-        path:"",
-    }, */
+let pronList = [
+    {
+        name: "Pitch Accent",
+        path: "pitchAccent.html",
+        imgLink: 'https://i.ibb.co/09K90kt/20240415-190514.png',
+    },
+     {
+        name: "Pronúncia ふ",
+        path: "",
+        imgLink: 'N5.jpg'
+    },
+     {
+        name: "Pronúncia ふ",
+        path: "",
+        imgLink: 'N5.jpg'
+    },
+     {
+        name: "Pronúncia ふ",
+        path: "",
+        imgLink: 'N5.jpg'
+    },
+     {
+        name: "Pronúncia ふ",
+        path: "",
+        imgLink: 'N5.jpg'
+    },
+     {
+        name: "Pronúncia ふ",
+        path: "",
+        imgLink: 'N5.jpg'
+    },
+     {
+        name: "Pronúncia ふ",
+        path: "",
+        imgLink: 'N5.jpg'
+    },
+     {
+        name: "Pronúncia ふ",
+        path: "",
+        imgLink: 'N5.jpg'
+    },
+     {
+        name: "Pronúncia ふ",
+        path: "",
+        imgLink: 'N5.jpg'
+    },
+     {
+        name: "Pronúncia ふ",
+        path: "",
+        imgLink: 'N5.jpg'
+    },
+     {
+        name: "Pronúncia ふ",
+        path: "",
+        imgLink: 'N5.jpg'
+    },
+     {
+        name: "Pronúncia ふ",
+        path: "",
+        imgLink: 'N5.jpg'
+    },
+];

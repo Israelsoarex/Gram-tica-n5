@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Gramática N5</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="pages.js"></script>
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img src="logo.png" alt="" class="logo"></img></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </header>
+    <div id="ham">
+    <div class="hamburger">
+        <ul id="ul">
+            <li><a href="Gramática.html">Gramática</a></li>
+            <li><a href="pronuncia.html">Pronúncia</a></li>
+            <li><a href="recursos.html">Recurso</a></li>
+            <li><a href="">Sobre</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="box"id="box">    
+        <table class="elements">
+            <tr>
+               <td><input type="text" placeholder="Procurar..." class="search"></td>
+               <td><i class="fa fa-search" aria-hidden="true"></i></td>
+            </tr>
+        </table>
+    </div>
+    <!-- main -->
+    <div class="main">
+    <div id="iframeDiv"></div>
+    <div class="panel">
+    <figure>
+        <img src="https://i.ibb.co/09K90kt/20240415-190514.png" alt="Ícone 1">
+        <figcaption>高低アクセント（Pitch accent）</figcaption>
+   </figure>
+  <h2>Pitch Accent</h2>
+  
+<p>O idioma japonês difere do português de várias maneiras, uma delas é a ausência de aumento de volume ou prolongamento de sílabas para enfatizar uma palavra. Em vez disso, o japonês utiliza o <strong>pitch accent</strong> como uma forma de acentuação. No japonês padrão, conhecido como <strong>標準語 (Hyojungo)</strong>, existem quatro padrões principais de pitch accent: 平板 (Heiban), 頭高 (Atamadaka), 中高 (Nakadaka) e 尾高 (Odaka).</p>
+  
+<p>Compreender e dominar o pitch accent é essencial para a correta pronúncia e compreensão do japonês. Mesmo que você estude japonês por muitos anos, o pitch accent não é algo que se adquire naturalmente. É necessário treinar os ouvidos para identificar e reproduzir corretamente os diferentes padrões de entonação.</p>
+<h2>平板 (Heiban)</h2>
+<p>Literalmente significando <strong>tábua plana</strong>, esse padrão é geralmente compreendido como <strong>sem acento</strong>. Ou seja, não possui queda. A verdade é que, em qualquer palavra do tipo <strong>平板</strong> que possua mais de uma mora, a primeira mora é pronunciada com um tom ligeiramente mais baixo, enquanto todas as moras restantes são pronunciadas com um tom alto. Além disso, qualquer partícula que venha após a palavra também será pronunciada com um tom alto.</p>
+<h3>Veja os exemplos abaixo:</h3>
+<!-- HEIBAN PATTERN -->
+<table>
+  <tr>
+    <th>Palavra</th>
+    <th>Padrão</th>
+    <th>Áudio</th>
+  </tr>
+  <tr>
+    <td>私は</td>
+    <td><svg style="fill: #009879;" width="137px" height="75px" viewBox="0 0 137 75">
+  <text x="5" y="67.5" style="font-size: 20px; fill: #009879;">わ</text>
+  <text x="40" y="67.5" style="font-size: 20px; fill: #009879;">た</text>
+  <text x="75" y="67.5" style="font-size: 20px; fill: #009879;">し</text>
+  <path d="m 20,28 27,-20" style="fill: none; stroke: #009879; stroke-width: 1.5;" />
+  <path d="m 56,5 25.5,0" style="fill: none; stroke: #009879; stroke-width: 1.5;" />
+  <path d="m 91,5 25.5,0" style="fill: none; stroke: #009879; stroke-width: 1.5;" />
+  <circle r="5" cx="16" cy="30" style="opacity: 1; fill: #009879;" />
+  <circle r="5" cx="51" cy="5" style="opacity: 1; fill: #009879;" />
+  <circle r="5" cx="86" cy="5" style="opacity: 1; fill: #009879;" />
+  <circle r="4.5" cx="121" cy="5" style="opacity: 1; fill: #00000000; stroke: #009879;" />
+</svg>
+</td>
+    <td>
+        <button class="audio-button" id="pitchBtn1">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+  <tr>
+    <td>あそこは</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">あ</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">そ</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">こ</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="5" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="5" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+     <button class="audio-button" id="pitchBtn2">
+          &#9654;
+     </button>
+    </td>
+  </tr>
+  <tr>
+    <td>子供は</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">こ</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">ど</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">も</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="5" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="5" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+      <button class="audio-button" id="pitchBtn3">
+          &#9654;
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td>自分は</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">じ</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">ぶ</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">ん</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="5" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="5" style="opacity:1; fill: #00000000; stroke: #009879" /></svg> 
+</td>
+    <td>
+      <button class="audio-button" id="pitchBtn4">
+          &#9654;
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td>一緒は</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">い</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">っ</text><text x="70" y="67.5" style="font-size:20px; fill: #009879">し</text><text x="87" y="67.5" style="font-size:14px; fill: #009879">ょ</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="5" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="5" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+    </td>
+    <td>
+      <button class="audio-button" id="pitchBtn5">
+          &#9654;
+      </button>
+    </td>
+  </tr>
+</table>
+<!-- ATAMADAKA PATTERN -->
+<h2>頭高 (Atamadaka)</h2>
+<p>A expressão <strong>頭高</strong> significa <strong>cabeça alta</strong>. Nesse padrão a primeira mora é alta, em seguida ocorre uma queda e todas as moras restantes são pronunciadas com um tom baixo. Além disso, a queda de tom nas palavras do tipo <strong>頭高</strong> é maior do que a subida de tom nas palavras <strong>平板</strong>. Qualquer partícula que seguir esta palavra também será pronunciada com um tom baixo. Resumidamente, <strong>頭高</strong> é o oposto do <strong>平板</strong>.</p>
+<h3>Veja os exemplos abaixo:</h3>
+<table>
+  <tr>
+    <th>Palavra</th>
+    <th>Padrão</th>
+    <th>Áudio</th>
+  </tr>
+  <tr>
+    <td>全て</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">す</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">べ</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">て</text><path d="m 20,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="30" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg> 
+</td>
+    <td>
+        <button class="audio-button" id="pitchBtn6">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+  <tr>
+    <td>なんで</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">な</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">ん</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">で</text><path d="m 20,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="30" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+     <button class="audio-button" id="pitchBtn7">
+          &#9654;
+     </button>
+    </td>
+  </tr>
+  <tr>
+    <td>さっき</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">さ</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">っ</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">き</text><path d="m 20,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="30" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+      <button class="audio-button" id="pitchBtn8">
+          &#9654;
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td>いつも</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">い</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">つ</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">も</text><path d="m 20,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="30" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+      <button class="audio-button" id="pitchBtn9">
+          &#9654;
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td>もっと</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">も</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">っ</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">と</text><path d="m 20,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="30" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+    </td>
+    <td>
+      <button class="audio-button" id="pitchBtn10">
+          &#9654;
+      </button>
+    </td>
+  </tr>
+</table>
+<!-- NAKADAKA PATTERN -->
+<h2>中高 (Nakadaka)</h2>
+<p>A expressão <strong>中高</strong> significa <strong>meio alto</strong>, pois a característica principal desse padrão é que há uma queda no meio em alguma parte da palavra. A primeira mora é baixa, e qualquer partícula que seguir a palavra também será pronunciada com um tom baixo. Conforme oque tem sido dito, a subida na palavra é menor do que a queda que ocorre posteriormente. Todas as palavras <strong>中高</strong> têm pelo menos três moras.</p>
+<h3>Veja os exemplos abaixo:</h3>
+<table>
+  <tr>
+    <th>Palavra</th>
+    <th>Padrão</th>
+    <th>Áudio</th>
+  </tr>
+  <tr>
+    <td>あなた</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">あ</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">な</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">た</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 55,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="30" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+        <button class="audio-button" id="pitchBtn11">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+  <tr>
+    <td>しかし</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">し</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">か</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">し</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 55,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="30" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+     <button class="audio-button" id="pitchBtn12">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+  <tr>
+    <td>少し</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">す</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">こ</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">し</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 55,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="30" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+      <button class="audio-button" id="pitchBtn13">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+  <tr>
+    <td>思い</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">お</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">も</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">い</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 55,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="30" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+    </td>
+    <td>
+      <button class="audio-button" id="pitchBtn14">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+  <tr>
+    <td>早い</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">は</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">や</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">い</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 55,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 91,30 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="30" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+    </td>
+    <td>
+      <button class="audio-button" id="pitchBtn15">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+</table>
+<!-- ODAKA PATTERN -->
+<h2>尾高 (Odaka)</h2>
+<p>A expressão <strong>尾高</strong> significa <strong>cauda alta</strong>, e nesse padrão, a primeira mora é baixa (a menos que a palavra tenha apenas uma mora), em seguida há uma subida e permanece alto até o final da palavra. Qualquer partícula que seguir a palavra possui um tom baixo, sendo isso a diferença entre <strong>尾高</strong> e <strong>平板</strong>.</p>
+<h3>Veja os exemplos abaixo:</h3>
+<table>
+  <tr>
+    <th>Palavra</th>
+    <th>Padrão</th>
+    <th>Áudio</th>
+  </tr>
+  <tr>
+    <td>みんなは</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">み</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">ん</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">な</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 90,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="5" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+        <button class="audio-button" id="pitchBtn16">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+  <tr>
+    <td>２つは</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">ふ</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">た</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">つ</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 90,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="5" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+     <button class="audio-button" id="pitchBtn17">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+  <tr>
+    <td>２人は</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">ふ</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">た</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">り</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 90,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="5" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+      <button class="audio-button" id="pitchBtn18">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+  <tr>
+    <td>言葉は</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">こ</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">と</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">ば</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 90,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="5" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+      <button class="audio-button" id="pitchBtn19">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+  <tr>
+    <td>心は</td>
+    <td><svg style="fill:#009879;" width="137px" height="75px" viewBox="0 0 137 75"><text x="5" y="67.5" style="font-size:20px; fill:#009879 ">こ</text><text x="40" y="67.5" style="font-size:20px; fill:#009879 ">こ</text><text x="75" y="67.5" style="font-size:20px; fill:#009879 ">ろ</text><path d="m 20,28 27,-20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 56,5 25.5,0" style="fill:none;stroke:#009879;stroke-width:1.5;" /><path d="m 90,8 27,20" style="fill:none;stroke:#009879;stroke-width:1.5;" /><circle r="5" cx="16" cy="30" style="opacity:1; fill: #009879" /><circle r="5" cx="51" cy="5" style="opacity:1; fill: #009879" /><circle r="5" cx="86" cy="5" style="opacity:1; fill: #009879" /><circle r="4.5" cx="121" cy="30" style="opacity:1; fill: #00000000; stroke: #009879" /></svg>
+</td>
+    <td>
+      <button class="audio-button" id="pitchBtn20">
+          &#9654;
+        </button>
+    </td>
+  </tr>
+</table>
+
+</div>
+    
+    </div>
+    <!-- footer -->
+    <footer>
+        <div id="rodaPe">
+            <div>
+                <h3>Siga minhas redes sociais:</h3>
+                <a href="https://instagram.com/israelsoarexx?igshid=NTdlMDg3MTY="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@Israelsoarex"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div>
+                <p>Taka-Hashi é o melhor site brasileiro para aprender japonês. Neste site é possível aprender desde gramática até pronúncia e etc... sem precisar de inglês, basta somente dominar o português e ter muita curiosidade e força de vontade pra mergulhar nessa nova jornada. 頑張ってね！- Ganbatte ne</p>
+            </div>
+            <div>
+                <p id="footAutor">AUTOR: ISRAEL SOARES - 高橋</p>
+                <img src="profile.jpg" alt="">
+                <p>Criador de conteúdo, Ajatter, Autodidata e Desenvolvedor. Ama música japonesa (jpop, citypop, anime song, tecnopop e etc), Adora estudar pronúncia e pitch-accent.</p>
+            </div>
+         </div>
+        
+        <span>高橋イスラエル</span>
+        <p id="footRight">2024 © - Taka-Hashi - Todos os direitos reservados </p>
+    </footer>
+    <div id="up"><b>↑</b></div>
+    <script src="script.js"></script>
+    <script src="teste.js"></script>
+    <script src="bancoDeDados.js"></script>
+    <script src="playAudio.js"></script>
+    <script>
+        let estrutura = dataPronuncia.pitchAccent;
+        criaIframe();
+    </script>
+</body>
+</html>
