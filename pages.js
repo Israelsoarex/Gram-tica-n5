@@ -6,7 +6,7 @@ let pageList = [
     },
     {
         name: "Partícula も (mo)",
-        path: "Particulaも.html",
+        path: "particulaも.html",
         imgLink: 'https://i.ibb.co/mR1MQkV/Particula-Mo.png'
     },
     {
