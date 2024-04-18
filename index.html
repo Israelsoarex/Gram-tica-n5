@@ -1,83 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
     <title>Gramática N5</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <script src="pages.js"></script>
 </head>
+
 <body>
     <header>
         <a href="Index.html"><img src="logo.png" alt="" class="logo"></img></a>
         <i id="bar" class="fa-solid fa-bars"></i>
     </header>
     <div id="ham">
-    <div class="hamburger">
-        <ul id="ul">
-            <li><a href="Gramática.html">Gramática</a></li>
-            <li><a href="">Pronúncia</a></li>
-            <li><a href="">Recurso</a></li>
-            <li><a href="">Sobre</a></li>
-        </ul>
+        <div class="hamburger">
+            <ul id="ul">
+                <li><a href="Gramática.html">Gramática</a></li>
+                <li><a href="pronuncia.html">Pronúncia</a></li>
+                <li><a href="recursos.html">Recurso</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+        </div>
     </div>
-    </div>
-    <div class="box"id="box">    
+    <div class="box" id="box">
         <table class="elements">
             <tr>
-               <td><input type="text" placeholder="Procurar..." class="search"></td>
-               <td><i class="fa fa-search" aria-hidden="true"></i></td>
+                <td><input type="text" placeholder="Procurar..." class="search"></td>
+                <td><i class="fa fa-search" aria-hidden="true"></i></td>
             </tr>
         </table>
     </div>
-    <div class="square">
-        <div class="img-last">
-        <img src="N5.jpg" alt="">
-        <span id="tag">ÚLTIMO POST</span>
+
+    <div class="grid-container">
+        <div class="square1">
+            <div id="squareLast" class="square">
+                <div class="img-last">
+                    
+                    <img src="N5.jpg" alt="">
+                    <span id="tag">ÚLTIMO POST</span>
+                </div>
+            </div>
+
         </div>
     </div>
-    <footer>
-        <div>
-            <a href="https://instagram.com/israel_soarex?igshid=NTdlMDg3MTY="><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://youtube.com/@Israelsoarex"><i class="fa-brands fa-youtube"></i></a>
+    <div class="pagDiv">
+        <div class="container">
+            <p></p>
+            <ul class="pagination">
+                <li><a href="" id="pgBack">Anterior</a></li>
+                <li><a href="" id="pgFirst">1</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="" id="pgLast">9</a></li>
+                <li><a href="" id="pgNext">Próximo</a></li>
+            </ul>
+            <p id="paginationP">Página 1 de 9</p>
         </div>
-        <p>高橋イスラエル</p>
-    </footer>
+    </div>
     <div id="up"><b>↑</b></div>
-    <script>
-        view = 0;
-        let bar = document.querySelector("#bar");
-        let box = document.querySelector("#box");
-        let hamburger = document.querySelector(".hamburger");
-        
-        bar.addEventListener("click",justOpen)
-        function justOpen() {
-            if(view == 0) {
-                view = 1;
-                hamburger.style.transform = "translateX(0)";
-                bar.style.background = "#fff";
-                bar.style.color = "#009879";
-            }else {
-                view = 0;
-                hamburger.style.transform = "translateX(100%)";
-                bar.style.background = "#009879";
-                bar.style.color = "#fff";
-            }
-        }
-        const scrollToTop = ()=>{
-            window.scroll({
-                top: 0,
-                behavior: 'smooth'
-            });
-        };
-        document.querySelector("#up").onclick = scrollToTop;
-        function lastPost() {
-        a = pageList.length - 1 ;
-        let square = document.querySelector(".square");
-        square.innerHTML +=`<span id="last"><a href="${pageList[a].path}">${pageList[a].name}</a></span>`;
-}
-lastPost()
-    </script>
+    <footer>
+        <div id="rodaPe">
+            <div>
+                <h3>Siga minhas redes sociais:</h3>
+                <a href="https://instagram.com/israelsoarexx?igshid=NTdlMDg3MTY="><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com/@Israelsoarex"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div>
+                <p>Taka-Hashi é o melhor site brasileiro para aprender japonês. Neste site é possível aprender desde
+                    gramática até pronúncia e etc... sem precisar de inglês, basta somente dominar o português e ter
+                    muita curiosidade e força de vontade pra mergulhar nessa nova jornada. 頑張ってね！- Ganbatte ne</p>
+            </div>
+            <div>
+                <p id="footAutor">CREATED BY: ISRAEL SOARES - 高橋</p>
+                <img src="profile.jpg" alt="">
+                <p>Criador de conteúdo, Ajatter, Autodidata e Desenvolvedor. Ama música japonesa (jpop, citypop, anime
+                    song, tecnopop e etc), Adora estudar pronúncia e pitch-accent.</p>
+            </div>
+        </div>
+
+        <span>高橋イスラエル</span>
+        <p id="footRight">2024 © - Taka-Hashi - Todos os direitos reservados </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="gramática.js"></script>
 </body>
+
 </html>
