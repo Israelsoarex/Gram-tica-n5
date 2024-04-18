@@ -130,8 +130,8 @@ let dataGramatica = {
             ["自転車","Jitensha","じてんしゃ","Bicicleta"],
         ],
         video: {
-            link: ``,
-            title: ""
+            link: `https://www.youtube.com/embed/rQPU5womdBA`,
+            title: "Introdução a língua japonesa - Partícula も (mo)"
         }
     },
     particulaGa: {
