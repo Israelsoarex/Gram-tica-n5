@@ -93,7 +93,7 @@ function allPost() {
         square1.innerHTML += `
         <div class="square">
         <div class="img-last">
-        <img src="${pageList[i].imgLink}" alt="">
+        <img src="${pageList[i].imgLink}" alt="${pageList[i].name}" loading="lazy">
         </div>
         <span id="last"><a href="${pageList[i].path}">${pageList[i].name}</a></span>
         </div>`;
