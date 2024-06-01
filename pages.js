@@ -1,7 +1,7 @@
 let pageList = [
     {
         name: "Partícula は (wa)",
-        path: "Particulaは.html",
+        path: "particulaは.html",
         imgLink: 'https://i.ibb.co/6RgGs1W/Particula-Wa.png',
     },
     {
@@ -11,7 +11,7 @@ let pageList = [
     },
     {
         name: "Partícula が (ga)",
-        path: "Particulaが.html",
+        path: "particulaが.html",
         imgLink: 'https://i.ibb.co/yNk3Tzt/Particula-Ga.png'
     },
     {
@@ -40,7 +40,7 @@ let pageList = [
         imgLink: 'https://i.ibb.co/z2Dvkv0/Particula-Wo.png'
     },
     {
-        name: "Particula か (ka)",
+        name: "Partícula か (ka)",
         path: "particulaか.html",
         imgLink: 'https://i.ibb.co/zZSn1b1/Particula-Ka.png'
     },
@@ -56,11 +56,11 @@ let pageList = [
     },
     {
         name: "Partícula や (ya)",
-        path: "",
+        path: "particulaや.html",
         imgLink: 'https://i.ibb.co/vmn42Qk/20240413-154633.png'
     },
     {
-        name: "Particula よ (yo)",
+        name: "Partícula よ (yo)",
         path: "",
         imgLink: 'https://i.ibb.co/ckXgXXQ/20240413-154704.png'
     },

@@ -390,10 +390,21 @@ h3{
     color: #fff;
     padding: 1rem;
 }
+.titleNeg{
+    background: #fff;
+    color: #009879;
+    padding: 1rem;
+    text-align: center;
+}
 .titleSpan{
     background: #fff;
     padding: .3rem;
     color: #009879;
+}
+.titleNegSpan{
+    background: #009879;
+    padding: .3rem;
+    color: #fff;
 }
 #vocabDiv table{
     margin: 0;
@@ -409,6 +420,20 @@ h3{
     position: relative;
     width: 100%;
 }
+.btnDiv{
+    background: #fff;
+    padding: 1rem 10%;
+  //  margin: 1rem 10%;
+}
+.btnDiv button{
+    width: 100%;
+    border: none;
+    background: #009879;
+    color: #fff;
+    padding: .8rem;
+    font-weight: 600;
+    border-radius: 1rem;
+}
 #iframeDiv iframe{
     width: 100%;
     height: 100%;
@@ -420,6 +445,9 @@ h3{
     .square{
         margin: 1rem 10%;
     }
+    /* .main{
+        width: 50%;
+    } */
 }
 @media(min-width: 767px){
    
@@ -456,7 +484,7 @@ h3{
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns:30% 30% 30%;
+        grid-template-columns:22% 22% 22% 22%;
         gap: 1rem;
         justify-content: center;
     }
@@ -583,3 +611,4 @@ h3{
     margin: 1rem 0;
     color: #009879;
 }
+

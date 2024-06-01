@@ -27,3 +27,24 @@ const scrollToTop = ()=>{
 };
 
 document.querySelector("#up").onclick = scrollToTop;
+
+/// input search
+let lupa = document.querySelector(".fa-search");
+
+lupa.addEventListener("click", ()=>{
+   
+   let inputValue = document.querySelector(".search").value;
+   
+   localStorage.setItem("keyWord", inputValue);
+   resetaMemoria();
+   
+   window.location.href = "search.html";
+});
+
+
+
+function resetaMemoria() {
+    localStorage.removeItem("relInicio");
+    localStorage.removeItem("relFim");
+    localStorage.removeItem("relPgIndex");
+}

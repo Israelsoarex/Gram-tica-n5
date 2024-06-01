@@ -124,3 +124,4 @@ function mudarPagina() {
     paginationP.innerText = `Página ${pronPgIndex} de ${listLength}`;
 }
 mudarPagina();
+

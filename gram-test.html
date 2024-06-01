@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Gramática N5</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="pages.js"></script>
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img src="logo.png" alt="" class="logo"></img></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </header>
+    <div id="ham">
+    <div class="hamburger">
+        <ul id="ul">
+            <li><a href="Gramática.html">Gramática</a></li>
+            <li><a href="pronuncia.html">Pronúncia</a></li>
+            <li><a href="recursos.html">Recurso</a></li>
+            <li><a href="">Sobre</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="box"id="box">
+        <label for="search"></label>
+        <table class="elements">
+            <tr>
+               <td><input type="search" placeholder="Procurar..." class="search" id="search" data-search ></td>
+               <td><i class="fa fa-search" aria-hidden="true"></i></td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- main -->
+    <template post-template >
+        <div class="square">
+        <div class="img-last">
+        <img src="N5.jpg" alt="">
+        </div>
+        <span id="last" last-post-template><a post-atributes ></a></span>
+        </div>
+    </template>
+    <div class="" posts-container ></div>
+    <!-- footer -->
+    <footer>
+        <div>
+            <a href="https://instagram.com/israel_soarex?igshid=NTdlMDg3MTY="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@Israelsoarex"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p>高橋イスラエル</p>
+    </footer>
+    <div id="up"><b>↑</b></div>
+    <script src="script.js"></script>
+    <script>
+        const postTemplate = document.querySelector("[post-template]");
+        const searchInput = document.querySelector("[data-search]");
+        const postContainer = document.querySelector("[posts-container]");
+        
+        
+        //
+        searchInput.addEventListener("input", e => {
+    const value = e.target.value.toLowerCase();
+    pages.forEach(page => {
+    const isVisible = page.name.toLowerCase().includes(value)|| 
+page.path.toLowerCase().includes(value);
+page.element.classList.toggle("hide", !isVisible)
+})
+})
+ 
+let pages = pageList.map(page => {
+    const post = postTemplate.content.cloneNode(true). children[0];
+    const template = document.querySelector("[post-template]");
+    const postAtributes = post.querySelector("a");
+    postAtributes.href = page.path;
+    postAtributes.textContent = page.name;
+    postContainer.append(post);
+    return { name: page.name, path: page.path, element: post}
+})
+    </script>
+</body>
+</html>
