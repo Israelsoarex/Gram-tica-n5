@@ -612,3 +612,32 @@ h3{
     color: #009879;
 }
 
+.aboutMain {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.aboutImgDiv img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.aboutTextDiv h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.aboutTextDiv p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .aboutMain {
+        grid-template-columns: 1fr;
+    }
+}

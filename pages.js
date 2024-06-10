@@ -66,7 +66,7 @@ let pageList = [
     },
     {
         name: "Partícula から (kara)",
-        path: "",
+        path: "particulaから.html",
         imgLink: 'https://i.ibb.co/Gk1qJRV/20240413-154809.png'
     },
     {
