@@ -472,6 +472,33 @@ h3{
 #frameSpan.pause {
     animation: pause 1s infinite; 
 }
+#pixDiv{
+    background: #009879;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem .8rem;
+    border-radius: .5rem;
+    transition: all .2s;
+    margin-top: 1rem;
+}
+#pixTopText{
+    color: #fff;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+#pixImg{
+    border-radius: .5rem;
+}
+#pixDownText{
+    color: #fff;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: .5rem;
+}
 @media(max-width: 767px){
     .square{
         margin: 1rem 10%;

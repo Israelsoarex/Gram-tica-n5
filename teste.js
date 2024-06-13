@@ -1,6 +1,29 @@
 let mainDiv = document.querySelector("#main");
 let vocabDiv = document.querySelector("#vocabDiv");
 let iframeDiv = document.querySelector("#iframeDiv");
+let pixDiv = document.querySelector("#pixDiv");
+pixDiv.addEventListener("click", ()=>{
+    pixDiv.style.transform = "scale(0.9)"
+    setTimeout(()=>{
+        pixDiv.style.transform = "scale(1)"
+    },250);
+    location.href = `https://livepix.gg/israelsoarex`;
+});
+function pixTemplate() {
+    let topText = document.createElement('div');
+    topText.id = "pixTopText";
+    topText.innerHTML = `Achou o projeto útil? <br>Clique e contribua!`;
+    let pixImg = document.createElement('img');
+    pixImg.id = "pixImg";
+    pixImg.src = "pixImg.jpg";
+    let downText = document.createElement('div');
+    downText.innerHTML = `Leia o código com a <br>câmera do celular.`;
+    downText.id = "pixDownText";
+    pixDiv.appendChild(topText);
+    pixDiv.appendChild(pixImg);
+    pixDiv.appendChild(downText);
+}
+pixTemplate();
 function destacar(frase) {
     let novaFrase = frase;
     let match;
@@ -109,7 +132,3 @@ iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
 iframe.setAttribute('allowfullscreen','deny');
 iframeDiv.appendChild(iframe);
 }
-
-
-
-
