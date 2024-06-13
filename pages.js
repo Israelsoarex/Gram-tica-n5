@@ -61,7 +61,7 @@ let pageList = [
     },
     {
         name: "Partícula よ (yo)",
-        path: "",
+        path: "particulaよ.html",
         imgLink: 'https://i.ibb.co/ckXgXXQ/20240413-154704.png'
     },
     {
@@ -372,9 +372,9 @@ let pronList = [
         imgLink: 'https://i.ibb.co/09K90kt/20240415-190514.png',
     },
      {
-        name: "Pronúncia ふ",
+        name: "Moras",
         path: "",
-        imgLink: 'N5.jpg'
+        imgLink: 'https://i.ibb.co/xgkQ2KG/4wv-Vqp80k6k-HD-1.jpg'
     },
      {
         name: "Pronúncia ふ",

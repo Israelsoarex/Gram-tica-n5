@@ -1,6 +1,16 @@
 let mainDiv = document.querySelector("#main");
 let vocabDiv = document.querySelector("#vocabDiv");
 let iframeDiv = document.querySelector("#iframeDiv");
+function destacar(frase) {
+    let novaFrase = frase;
+    let match;
+    // Enquanto houver partículas entre colchetes na frase, substitua todas
+    while ((match = novaFrase.match(/\[([^\]]+?)\]/))) {
+        let particulaDestacada = match[1];
+        novaFrase = novaFrase.replace(new RegExp(`\\[${particulaDestacada}\\]`, 'g'), `<span style="color: #f00;">${particulaDestacada}</span>`);
+    }
+    return novaFrase;
+}
 function criaFigura() {
 for (i = 0; i <= estrutura.sentence.length-1; i++) {
 let figure = document.createElement("figure");
@@ -29,7 +39,7 @@ tBody.appendChild(tRow4);
 table.appendChild(tBody);
 figure.appendChild(table);
 
-tData1.innerHTML = `<span class="tdTitle" id="tdSen">${(i+1).toString().padStart(2,'0')}</span> ${estrutura.sentence[i]}`;
+tData1.innerHTML = `<span class="tdTitle" id="tdSen">${(i+1).toString().padStart(2,'0')}</span> ${destacar(estrutura.sentence[i])}`;
 tData2.innerHTML = `<span class="tdTitle" id="tdRoma">Romaji</span> ${estrutura.romaji[i]}`;
 tData3.innerHTML = `<span class="tdTitle" id="tdHira">Kana</span> ${estrutura.hiragana[i]}`;
 tData4.innerHTML = `<span class="tdTitle" id="tdTrad">Tradução</span> ${estrutura.traducao[i]}`;
@@ -74,6 +84,21 @@ function criaVocab() {
 }
 
 function criaIframe() {
+    vdLink = estrutura.video.link;
+    if(vdLink == "") {
+        let frameSpan = document.createElement("div");
+        frameSpan.id = "frameSpan";
+        frameSpan.textContent = "VÍDEO EM BREVE !";
+        iframeDiv.appendChild(frameSpan);
+        iframeDiv.style.background = "#cccccc44";
+
+function togglePause() {
+    frameSpan.classList.toggle('pause');
+}
+
+frameSpan.addEventListener('animationiteration',togglePause);
+    }
+    
     var iframe = document.createElement('iframe');
 
 iframe.setAttribute('src', estrutura.video.link);
@@ -82,8 +107,6 @@ iframe.setAttribute('frameborder', '0');
 iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;');
 iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
 iframe.setAttribute('allowfullscreen','deny');
-
-
 iframeDiv.appendChild(iframe);
 }
 
