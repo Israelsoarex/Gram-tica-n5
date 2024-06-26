@@ -63,16 +63,18 @@ table.appendChild(tBody);
 figure.appendChild(table);
 
 tData1.innerHTML = `<span class="tdTitle" id="tdSen">${(i+1).toString().padStart(2,'0')}</span> ${destacar(estrutura.sentence[i])}`;
-tData2.innerHTML = `<span class="tdTitle" id="tdRoma">Romaji</span> ${estrutura.romaji[i]}`;
-tData3.innerHTML = `<span class="tdTitle" id="tdHira">Kana</span> ${estrutura.hiragana[i]}`;
+tData2.innerHTML = `<span class="tdTitle" id="tdHira">Kana</span> ${estrutura.hiragana[i]}`;
+tData3.innerHTML = `<span class="tdTitle" id="tdRoma">Romaji</span> ${estrutura.romaji[i]}`;
 tData4.innerHTML = `<span class="tdTitle" id="tdTrad">Tradução</span> ${estrutura.traducao[i]}`;
 
 title.innerText = `Exemplo #${i+1}`;
+
 mainDiv.appendChild(title);
 mainDiv.appendChild(figure);
 
 }
 }
+
 
 function criaVocab() {
    vocabDiv.innerHTML += `<h3 class="vocab">Vocabulário <span class="vocabSpan">単語</span></h3>`

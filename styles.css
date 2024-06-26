@@ -1,3 +1,7 @@
+
+*{
+    user-select: none;
+}
 body{
     background: #009879;
     margin: 0;
@@ -206,12 +210,12 @@ header{
     color: #CBE5FE;
 }
 #tdHira{
-    background: #0B5460;
-    color: #D0ECF0;
-}
-#tdRoma{
     background: #135623;
     color: #D4EDDA;
+}
+#tdRoma{
+    background: #0B5460;
+    color: #D0ECF0;
 }
 #tdSen{
     background: #000;
@@ -575,6 +579,37 @@ h3{
     header{
         height: 5rem;
     }
+    #pixDiv{
+        position: relative;
+        width: 100%;
+        height: 8rem;
+        padding: 0;
+        cursor: pointer;
+    }
+    #pixTopText{
+        position: absolute;
+        top: 1rem;
+        left: 8rem;
+        width: auto;
+        text-align: left;
+    }
+    #pixImg{
+        width: 6rem;
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+    }
+    #pixDownText{
+        position: absolute;
+        bottom: 1rem;
+        width: auto;
+        text-align: left;
+        left: 8rem;
+    }
+    #errorImg{
+        width: 400px;
+    }
+   
 }
 
 

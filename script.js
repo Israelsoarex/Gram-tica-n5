@@ -29,19 +29,29 @@ const scrollToTop = ()=>{
 document.querySelector("#up").onclick = scrollToTop;
 
 /// input search
-let lupa = document.querySelector(".fa-search");
+function buscar() {
+    let inputValue = document.querySelector(".search").value;
+    
+    if (inputValue.trim() !== '') {
+        localStorage.setItem("keyWord", inputValue);
+        resetaMemoria();
+        window.location.href = "search.html";
+    }
+}
 
-lupa.addEventListener("click", ()=>{
-   
-   let inputValue = document.querySelector(".search").value;
-   
-   localStorage.setItem("keyWord", inputValue);
-   resetaMemoria();
-   
-   window.location.href = "search.html";
+
+let lupa = document.querySelector(".fa-search");
+lupa.addEventListener("click", () => {
+    buscar();
 });
 
-
+let campoBusca = document.querySelector(".search");
+campoBusca.addEventListener("keypress", (e) => {
+    
+    if (e.key === 'Enter') {
+        buscar();
+    }
+});
 
 function resetaMemoria() {
     localStorage.removeItem("relInicio");

@@ -1,6 +1,7 @@
 //GRAMÁTICA PAGE 
 let square1 = document.querySelector(".square1");
 let square = document.querySelector("#squareLast");
+let lastImgDiv = document.querySelector("#imgLast");
 let pgBack = document.querySelector("#pgBack");
 let pgNext = document.querySelector("#pgNext");
 let pgFirst = document.querySelector("#pgFirst");
@@ -86,6 +87,14 @@ pgLast.addEventListener("click",()=>{
     console.log("tá setado");
 });
 
+function lastPost() {
+    a = pronList.length - 1 ;
+    lastImgDiv.innerHTML = `<img src="${pronList[a].imgLink}" alt="nada">
+                    <span id="tag">ÚLTIMO POST</span>`;
+    squareLast.innerHTML +=`<span id="last"><a href="${pronList[a].path}">${pronList[a].name}</a></span>`;
+}
+lastPost();
+
 function allPost() {
     
     for(let i = pronInicio ; i <= pronFim; i++){
@@ -101,11 +110,7 @@ function allPost() {
 }
 allPost();
 
-function lastPost() {
-    a = pronList.length - 1 ;
-    squareLast.innerHTML +=`<span id="last"><a href="${pronList[a].path}">${pronList[a].name}</a></span>`;
-}
-lastPost();
+
 
 function setarMemoria(pronInicio ,pronFim,pronPgIndex) {
     localStorage.setItem("pronInicio ",pronInicio );

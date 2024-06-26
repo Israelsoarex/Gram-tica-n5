@@ -369,7 +369,7 @@ let pronList = [
     {
         name: "Pitch Accent",
         path: "pitchAccent.html",
-        imgLink: 'https://i.ibb.co/09K90kt/20240415-190514.png',
+        imgLink: 'https://i.ibb.co/THW1ptv/VQOd-HQaj-GG0-HD.jpg',
     },
      {
         name: "Moras",
@@ -377,53 +377,53 @@ let pronList = [
         imgLink: 'https://i.ibb.co/xgkQ2KG/4wv-Vqp80k6k-HD-1.jpg'
     },
      {
-        name: "Pronúncia ふ",
+        name: "Pronúncia do ふ",
         path: "",
-        imgLink: 'N5.jpg'
+        imgLink: 'https://i.ibb.co/dKzSTmJ/S4-AC7u-AKn-JI-HD-1.jpg'
     },
      {
-        name: "Pronúncia ふ",
+        name: "Em breve ",
         path: "",
-        imgLink: 'N5.jpg'
+        imgLink: 'https://i.ibb.co/103z1H0/20240626-183455.png'
     },
      {
-        name: "Pronúncia ふ",
+        name: "Em breve ",
         path: "",
-        imgLink: 'N5.jpg'
+        imgLink: 'https://i.ibb.co/103z1H0/20240626-183455.png'
     },
      {
-        name: "Pronúncia ふ",
+        name: "Em breve ",
         path: "",
-        imgLink: 'N5.jpg'
+        imgLink: 'https://i.ibb.co/103z1H0/20240626-183455.png'
     },
      {
-        name: "Pronúncia ふ",
+        name: "Em breve ",
         path: "",
-        imgLink: 'N5.jpg'
+        imgLink: 'https://i.ibb.co/103z1H0/20240626-183455.png'
     },
      {
-        name: "Pronúncia ふ",
+        name: "Em breve ",
         path: "",
-        imgLink: 'N5.jpg'
+        imgLink: 'https://i.ibb.co/103z1H0/20240626-183455.png'
     },
      {
-        name: "Pronúncia ふ",
+        name: "Em breve ",
         path: "",
-        imgLink: 'N5.jpg'
+        imgLink: 'https://i.ibb.co/103z1H0/20240626-183455.png'
     },
      {
-        name: "Pronúncia ふ",
+        name: "Em breve ",
         path: "",
-        imgLink: 'N5.jpg'
+        imgLink: 'https://i.ibb.co/103z1H0/20240626-183455.png'
     },
      {
-        name: "Pronúncia ふ",
+        name: "Em breve ",
         path: "",
-        imgLink: 'N5.jpg'
+        imgLink: 'https://i.ibb.co/103z1H0/20240626-183455.png'
     },
      {
-        name: "Pronúncia ふ",
+        name: "Em breve o último",
         path: "",
-        imgLink: 'N5.jpg'
-    },
+        imgLink: 'https://i.ibb.co/103z1H0/20240626-183455.png',
+    }
 ];

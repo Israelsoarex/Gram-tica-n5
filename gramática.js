@@ -97,7 +97,7 @@ function allPost() {
         </div>
         <span id="last"><a href="${pageList[i].path}">${pageList[i].name}</a></span>
         </div>`;
-    }
+    }    
 }
 allPost();
 

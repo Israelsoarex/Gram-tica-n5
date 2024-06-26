@@ -147,11 +147,31 @@ pgLast.addEventListener("click",()=>{
     console.log("tá setado");
 });
 function allPost(relInicio,relFim) {
+    const  estiloQuandoVazio = `
+    .square1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #box{
+        margin-bottom: 2rem;
+    }
+    .pagDiv{
+        margin-top: 1rem;
+    }
+    `;
+    let style = document.createElement('style');
+        
+    document.head.appendChild(style);
+
+    
     if (relatedItems.length == 0) {
         let errorImg = document.createElement('img');
+        errorImg.id = "errorImg";
         errorImg.src = "error.png";
         square1.appendChild(errorImg);
         square.style.display = "none";
+        style.textContent = estiloQuandoVazio;
         return
     }
     for(let i = relInicio ; i <= relFim; i++){
