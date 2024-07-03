@@ -8,6 +8,8 @@ if (window.innerWidth < 768) {
 
 let squareGram = document.querySelector("#squareGram");
 let squarePron = document.querySelector("#squarePron");
+let gramBtn = document.querySelector("#gramBtn");
+let pronBtn = document.querySelector("#pronBtn");
 
 
 function criaDivGram() {
@@ -41,3 +43,13 @@ function criaDivPron() {
 }
 
 criaDivPron();
+
+
+gramBtn.addEventListener("click", ()=>{
+    window.location.href = "Gramática.html";
+});
+pronBtn.addEventListener("click", ()=>{
+    window.location.href = "pronuncia.html";
+});
+
+

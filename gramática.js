@@ -93,13 +93,18 @@ function allPost() {
         square1.innerHTML += `
         <div class="square">
         <div class="img-last">
-        <img src="${pageList[i].imgLink}" alt="${pageList[i].name}" loading="lazy">
+        <img src="${pageList[i].imgLink}" alt="${pageList[i].name}" loading="lazy"
+        onclick="irProSite('${pageList[i].path}')">
         </div>
         <span id="last"><a href="${pageList[i].path}">${pageList[i].name}</a></span>
         </div>`;
     }    
 }
 allPost();
+
+function irProSite(link) {
+    window.location.href = link;
+}
 
 function lastPost() {
     a = pageList.length - 1 ;
