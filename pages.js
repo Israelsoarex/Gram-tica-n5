@@ -76,7 +76,7 @@ let pageList = [
     },
     {
         name: "Prefixo お/ご (o/go)",
-        path: "",
+        path: "prefixo御.html",
         imgLink: 'https://i.ibb.co/HCQhTB0/Prefixo-Ogo.png'
     },
     {
