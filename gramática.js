@@ -1,6 +1,7 @@
 //GRAMÁTICA PAGE 
 let square1 = document.querySelector(".square1");
 let square = document.querySelector("#squareLast");
+let lastImgDiv = document.querySelector("#imgLast");
 let pgBack = document.querySelector("#pgBack");
 let pgNext = document.querySelector("#pgNext");
 let pgFirst = document.querySelector("#pgFirst");
@@ -85,7 +86,13 @@ pgLast.addEventListener("click",()=>{
     location.reload();
     console.log("tá setado");
 });
-
+function lastPost() {
+     let a = pageList.length - 1;
+    lastImgDiv.innerHTML = `<img src="${pageList[a].imgLink}" alt="${pageList[a].name}" loading="lazy" onclick="irProSite('${pageList[a].path}')">
+                    <span id="tag">ÚLTIMO POST</span>`;
+    squareLast.innerHTML +=`<span class="last"><a href="${pageList[a].path}">${pageList[a].name}</a></span>`;
+}
+lastPost();
 function allPost() {
     
     for(let i = inicio; i <= fim; i++){
@@ -93,10 +100,9 @@ function allPost() {
         square1.innerHTML += `
         <div class="square">
         <div class="img-last">
-        <img src="${pageList[i].imgLink}" alt="${pageList[i].name}" loading="lazy"
-        onclick="irProSite('${pageList[i].path}')">
+        <img src="${pageList[i].imgLink}" alt="${pageList[i].name}" loading="lazy" onclick="irProSite('${pageList[i].path}')">
         </div>
-        <span id="last"><a href="${pageList[i].path}">${pageList[i].name}</a></span>
+        <span class="last"><a href="${pageList[i].path}">${pageList[i].name}</a></span>
         </div>`;
     }    
 }
@@ -106,19 +112,13 @@ function irProSite(link) {
     window.location.href = link;
 }
 
-function lastPost() {
-    a = pageList.length - 1 ;
-    squareLast.innerHTML +=`<span id="last"><a href="${pageList[a].path}">${pageList[a].name}</a></span>`;
-}
-lastPost();
-
 function setarMemoria(inicio,fim,pageIndex) {
     localStorage.setItem("inicio",inicio);
     localStorage.setItem("fim", fim);
     localStorage.setItem("pageIndex", pageIndex);
     console.log("setei")
 }
-function resetaMemoria() {
+function resetaMemoGram() {
     localStorage.removeItem("inicio");
     localStorage.removeItem("fim");
     localStorage.removeItem("pageIndex");

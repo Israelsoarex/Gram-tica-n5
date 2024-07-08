@@ -1006,23 +1006,82 @@ let dataGramatica = {
         }
     },
     particulaNode: {
-        sentence: [],
-        traducao: [],
-        hiragana: [],
-        romaji: [],
+        sentence: [
+            "昨日は雨が降っていた[ので]、家にいました。",
+            "お金がない[ので]、新しい服を買えません。",
+            "この本は面白そうな[ので]、読んでみたいと思います。",
+            "今日は忙しかった[ので]、昼ご飯を食べる時間がありません。",
+            "寒い[ので]、コートを着て出かけます。",
+            "彼は遅れた[ので]、会議に参加できませんでした。",
+            "日本語が上手ではない[ので]、簡単な言葉を使います。",
+            "病気な[ので]、頭が痛い",
+            "風邪を引いた[ので]、今日は学校を休みます。",
+            "道が混んでいた[ので]、遅れてしまいました。"
+        ],
+        traducao: [
+            "Ontem estava chovendo, por isso fiquei em casa.",
+            "Eu não tenho dinheiro, por isso não posso comprar uma roupa nova.",
+            "Esse livro parece interessante, por isso acho que vou ler ele.",
+            "Hoje eu tô ocupado, por isso não tive tempo pra almoçar.",
+            "Tá frio, por isso eu vou vestir um casaco e sair.",
+            "Ele se atrasou, por isso não pode participar da reunião.",
+            "Eu não sou bom em japonês, por isso vou usar palavras fáceis.",
+            "Estou doente, por isso minha cabeça dói.",
+            "Eu peguei gripe, por isso vou faltar a escola hoje.",
+            "O caminho tava engarrafado, por isso me atrasei."
+        ],
+        hiragana: [
+            "きのうはあめがふっていたので、いえにいました。",
+        "おかねがないので、あたらしいふくをかえません。",
+        "このほんはおもしろそうなので、よんでみたいとおもいます。",
+        "きょうはいそがしかったので、ひるごはんをたべるじかんがありません。",
+        "さむいので、コートをきてでかけます。",
+        "かれはおくれたので、かいぎにさんかできませんでした。",
+        "にほんごがじょうずではないので、かんたんなことばをつかいます。",
+        "びょうきなので、あたまがいたい。",
+        "かぜをひいたので、きょうはがっこうをやすみます。",
+        "みちがこんでいたので、おくれてしまいました。"
+        ],
+        romaji: [
+            "Kinou wa ame ga futteita node, ie ni imashita.",
+        "Okane ga nai node, atarashii fuku o kaemasen.",
+        "Kono hon wa omoshirosou na node, yonde mitai to omoimasu.",
+        "Kyou wa isogashikatta node, hirugohan o taberu jikan ga arimasen.",
+        "Samui node, kooto o kite dekakemasu.",
+        "Kare wa okureta node, kaigi ni sanka dekimasen deshita.",
+        "Nihongo ga jouzu dewa nai node, kantan na kotoba o tsukaimasu.",
+        "Byouki na node, atama ga itai.",
+        "Kaze o hiita node, kyou wa gakkou o yasumimasu.",
+        "Michi ga kondeita node, okurete shimaimashita."　
+        ],
         vocabulario: [
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
+            ["昨日","Kinou","きのう","Ontem"],
+            ["雨","Ame","あめ","Chuva"],
+            ["家","Ie","いえ","Casa"],
+            ["お金","Okane","おかね","Dinheiro"],
+            ["新しい","Atarashii","あたらしい","Novo"],
+            ["服","Fuku","ふく","Roupa"],
+            ["この","Kono","","Este"],
+            ["本","Hon","ほん","Livro"],
+            ["面白い","Omoshiroi","おもしろい","Interessante"],
+            ["今日","Kyou","きょう","Hoje"],
+            ["忙しい","Isogashii","いそがしい","Ocupado"],
+            ["昼ご飯","Hirugohan","ひるごはん","Almoço"],
+            ["時間","Jikan","じかん","Tempo"],
+            ["寒い","Samui","さむい","Frio"],
+            ["コート","Kōto","","Casaco"],
+            ["彼","Kare","かれ","Ele"],
+            ["会議","Kaigi","かいぎ","Reunião"],
+            ["日本語","Nihongo","にほんご","Japonês"],
+            ["上手","Jouzu","じょうず","Bom em "],
+            ["簡単","Kantan","かんたん","Fácil"],
+            ["言葉","Kotoba","ことば","Palavra"],
+            ["病気","Byouki","びょうき","Doente"],
+            ["頭","Atama","あたま","Cabeça"],
+            ["痛い","Itai","いたい","Doer"],
+            ["風邪","Kaze","かぜ","Resfriado"],
+            ["学校","Gakkō","がっこう","Escola"],
+            ["道","Michi","みち","Caminho"]
         ],
         video: {
             link: ``,
@@ -1030,24 +1089,59 @@ let dataGramatica = {
         }
     },
     particulaOGo: {
-        sentence: [],
-        traducao: [],
-        hiragana: [],
-        romaji: [],
-        vocabulario: [
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
-            ["","","",""],
+        sentence: [
+            "[お]名前は何ですか？",
+            "[お]父さんは[お]いくつですか？",
+            "[お]元気ですか？",
+            "[お]姉さんとテレビを見ました。",
+            "これは[お]茶です。",
+            "彼は[お]仕事で日本に行きました。",
+            "[お]誕生日おめでとうございます。",
+            
         ],
+        traducao: [
+            "Qual é o seu nome?",
+            "Quantos anos tem seu pai?",
+            "Como vai você?",
+            "Eu assisti TV com minha irmã mais velha.",
+            "Isto é chá.",
+            "Ele foi para o Japão a trabalho.",
+            "Feliz aniversário!"
+        ],
+        hiragana: [
+            "おなまえはなんですか？",
+            "おとうさんはおいくつですか？",
+            "おげんきですか？",
+            "おねえさんとテレビをみました。",
+            "これはおちゃです。",
+            "かれはおしごとでにほんにいきました。",
+            "おたんじょうびおめでとうございます。"
+        ],
+        romaji: [
+            "Onamae wa nan desu ka?",
+            "Otousan wa oikutsu desu ka?",
+            "Ogenki desu ka?",
+            "Oneesan to terebi o mimashita.",
+            "Kore wa ocha desu.",
+            "Kare wa oshigoto de Nihon ni ikimashita.",
+            "Otanjoubi omedetou gozaimasu."
+        ],
+        vocabulario: [
+    ["名前", "Namae", "なまえ", "Nome"],
+    ["何", "Nan", "なん", "O quê?"],
+    ["お父さん", "Otousan", "おとうさん", "Pai"],
+    ["幾つ", "Ikutsu", "いくつ", "Quantos anos?"],
+    ["元気", "Genki", "げんき","bem"],
+    ["お姉さん", "Oneesan", "おねえさん", "Irmã"],
+    ["テレビ", "Terebi", "", "Televisão"],
+    ["これ", "Kore", "", "Isto"],
+    ["お茶", "Ocha", "おちゃ", "Chá"],
+    ["彼", "Kare", "かれ", "Ele"],
+    ["仕事", "Shigoto", "しごと", "Trabalho"],
+    ["日本", "Nihon", "にほん", "Japão"],
+    ["誕生日", "Tanjoubi", "たんじょうび", "Aniversário"],
+    ["おめでとう", "Omedetou", "", "Parabéns"],
+],
         video: {
             link: ``,
             title: ""
@@ -1345,3 +1439,25 @@ let dataPronuncia = {
     
 
 
+function contarPreenchidosEVazios(objeto) {
+    let preenchidos = -1;
+    let vazios = 0;
+
+   
+    for (let chave in objeto) {
+        if (objeto[chave].sentence && objeto[chave].sentence.length > 0) {
+            preenchidos++;
+        } else {
+            vazios++;
+        }
+    }
+
+    
+    return { preenchidos, vazios };
+}
+
+
+let resultado = contarPreenchidosEVazios(dataGramatica);
+
+console.log(`Objetos preenchidos: ${resultado.preenchidos}`);
+console.log(`Objetos vazios: ${resultado.vazios}`);

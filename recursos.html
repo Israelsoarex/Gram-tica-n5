@@ -34,14 +34,29 @@
     </div>
     
     <!-- main -->
-    <div>
-       <div class="square">
-        <div class="img-last">
-        <img src="recurso.png" alt="">
-        </div>
-        <span id="last"><a href="${pageList[i].path}">Adjetivos い</a></span>
+    <div class="grid-container">
+        <div class="square1">
+            <div class="square" id="squareLast">
+        　      <div class="img-last" id="imgLast">
+            
+                </div>
+            </div>
         </div>
     </div>
+    <div class="pagDiv">
+        <div class="container">
+            <p></p>
+            <ul class="pagination">
+                <li><a href="" id="pgBack">Anterior</a></li>
+                <li><a href="" id="pgFirst">1</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="" id="pgLast">9</a></li>
+                <li><a href="" id="pgNext">Próximo</a></li>
+            </ul>
+            <p id="paginationP">Página 1 de 9</p>
+        </div>
+    </div>
+    
     <!-- footer -->
     <footer>
         <div id="rodaPe">
@@ -65,6 +80,6 @@
     </footer>
     <div id="up"><b>↑</b></div>
     <script src="script.js"></script>
- 
+    <script src="recurso.js"></script>
 </body>
 </html>

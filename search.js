@@ -16,9 +16,11 @@ function filterArrays(keyword) {
 
     // Filtra o array pronList
     let filteredPronList = pronList.filter(item => removeDiacritics(item.name.toLowerCase()).includes(keyword.toLowerCase()));
+    
+    let filteredRecList = recList.filter(item => removeDiacritics(item.name.toLowerCase()).includes(keyword.toLowerCase()));
 
     // Retorna um novo array com os itens filtrados
-    return [...filteredPageList, ...filteredPronList];
+    return [...filteredPageList, ...filteredPronList,...filteredRecList];
 }
 
 // Chama a função e armazena o resultado em uma variável
@@ -41,6 +43,7 @@ let pgNext = document.querySelector("#pgNext");
 let pgFirst = document.querySelector("#pgFirst");
 let pgLast = document.querySelector("#pgLast");
 let paginationP = document.querySelector("#paginationP");
+let lastImgDiv = document.querySelector("#imgLast");
 let relPgIndex;
 let relInicio;
 let relFim;
@@ -146,6 +149,21 @@ pgLast.addEventListener("click",()=>{
     location.reload();
     console.log("tá setado");
 });
+
+function lastPost() {
+    if(relatedItems.length == 0) {
+        return
+    }
+    a = relatedItems.length - 1 ;
+    lastImgDiv.innerHTML =`
+    <img src="${relatedItems[a].imgLink}" alt="${relatedItems[a].name}" loading="lazy" onclick="irProSite('${relatedItems[a].path}')">
+                    <span id="tag">ÚLTIMO POST</span>`;
+     squareLast.innerHTML +=`<span class="last"><a href="${relatedItems[a].path}">${relatedItems[a].name}</a></span>`;
+}
+lastPost();
+function irProSite(link) {
+    window.location.href = link;
+}
 function allPost(relInicio,relFim) {
     const  estiloQuandoVazio = `
     .square1{
@@ -179,22 +197,17 @@ function allPost(relInicio,relFim) {
         square1.innerHTML += `
         <div class="square">
         <div class="img-last">
-        <img src="${relatedItems[i].imgLink}" alt="">
+        <img src="${relatedItems[i].imgLink}" alt="" loading="lazy" onclick="irProSite('${relatedItems[i].path}')">
         </div>
-        <span id="last"><a href="${relatedItems[i].path}">${relatedItems[i].name}</a></span>
-        </div>`;
+        <span class="last"><a href="${relatedItems[i].path}">${relatedItems[i].name}</a></span>
+        </div>
+        
+        
+        
+        `;
     }
 }
 allPost(relInicio,relFim);
-
-function lastPost() {
-    if(relatedItems.length == 0) {
-        return
-    }
-    a = relatedItems.length - 1 ;
-    squareLast.innerHTML +=`<span id="last"><a href="${relatedItems[a].path}">${relatedItems[a].name}</a></span>`;
-}
-lastPost();
 
 function setarMemoria(relInicio ,relFim,relPgIndex) {
     localStorage.setItem("relInicio ",relInicio );

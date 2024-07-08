@@ -89,9 +89,9 @@ pgLast.addEventListener("click",()=>{
 
 function lastPost() {
     a = pronList.length - 1 ;
-    lastImgDiv.innerHTML = `<img src="${pronList[a].imgLink}" alt="nada">
+    lastImgDiv.innerHTML = `<img src="${pronList[a].imgLink}" alt="nada" loading="lazy" onclick="irProSite('${pronList[a].path}')">
                     <span id="tag">ÚLTIMO POST</span>`;
-    squareLast.innerHTML +=`<span id="last"><a href="${pronList[a].path}">${pronList[a].name}</a></span>`;
+    squareLast.innerHTML +=`<span class="last"><a href="${pronList[a].path}">${pronList[a].name}</a></span>`;
 }
 lastPost();
 
@@ -102,14 +102,17 @@ function allPost() {
         square1.innerHTML += `
         <div class="square">
         <div class="img-last">
-        <img src="${pronList[i].imgLink}" alt="">
+        <img src="${pronList[i].imgLink}" alt="" loading="lazy" onclick="irProSite('${pronList[i].path}')">
         </div>
-        <span id="last"><a href="${pronList[i].path}">${pronList[i].name}</a></span>
+        <span class="last"><a href="${pronList[i].path}">${pronList[i].name}</a></span>
         </div>`;
     }
 }
 allPost();
 
+function irProSite(link) {
+    window.location.href = link;
+}
 
 
 function setarMemoria(pronInicio ,pronFim,pronPgIndex) {
@@ -118,7 +121,7 @@ function setarMemoria(pronInicio ,pronFim,pronPgIndex) {
     localStorage.setItem("pronPgIndex", pronPgIndex);
     console.log("setei")
 }
-function resetaMemoria() {
+function resetaMemoPron() {
     localStorage.removeItem("pronInicio ");
     localStorage.removeItem("pronFim");
     localStorage.removeItem("pronPgIndex");

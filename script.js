@@ -2,6 +2,18 @@
 let bar = document.querySelector("#bar");
 let box = document.querySelector("#box");
 let hamburger = document.querySelector(".hamburger");
+let gramLi = document.querySelector(".hamburger ul#ul li:nth-child(1)");
+let pronLi = document.querySelector(".hamburger ul#ul li:nth-child(2)");
+let recLi = document.querySelector(".hamburger ul#ul li:nth-child(3)");
+gramLi.addEventListener("click",()=>{
+     resetaMemoGram();
+});
+pronLi.addEventListener("click",()=>{
+     resetaMemoPron();
+});
+recLi.addEventListener("click",()=>{
+     resetaMemoRec();
+});
 
 view = 0;
 //LISTENERS
@@ -58,3 +70,19 @@ function resetaMemoria() {
     localStorage.removeItem("relFim");
     localStorage.removeItem("relPgIndex");
 }
+function resetaMemoGram() {
+    localStorage.removeItem("inicio");
+    localStorage.removeItem("fim");
+    localStorage.removeItem("pageIndex");
+}
+function resetaMemoPron() {
+    localStorage.removeItem("pronInicio ");
+    localStorage.removeItem("pronFim");
+    localStorage.removeItem("pronPgIndex");
+}
+function resetaMemoRec() {
+    localStorage.removeItem("recInicio");
+    localStorage.removeItem("recFim");
+    localStorage.removeItem("recPgIndex");
+}
+

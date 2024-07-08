@@ -71,13 +71,13 @@ let pageList = [
     },
     {
         name: "Partícula ので (node)",
-        path: "",
+        path: "particulaので.html",
         imgLink: 'https://i.ibb.co/F8TqfxP/20240413-154832.png'
     },
     {
-        name: "Partícula お/ご (o/go)",
+        name: "Prefixo お/ご (o/go)",
         path: "",
-        imgLink: 'https://i.ibb.co/fHZVt4p/20240413-154917.png'
+        imgLink: 'https://i.ibb.co/HCQhTB0/Prefixo-Ogo.png'
     },
     {
         name: "Partícula だけ (dake)",
@@ -361,7 +361,8 @@ let pageList = [
     },
     {
         name: "Estrutura は〜より〜です (wa - yori - desu)",
-        path: ""
+        path: "",
+        imgLink: 'https://i.ibb.co/687hBwS/20240413-163047.png'
     },
 ];
 
@@ -425,5 +426,69 @@ let pronList = [
         name: "Em breve o último",
         path: "",
         imgLink: 'https://i.ibb.co/103z1H0/20240626-183455.png',
+    }
+];
+
+
+let recList = [
+    {
+        name: "inicio",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
+    },
+     {
+        name: "meio",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
+    },
+     {
+        name: "Fim",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
+    },
+     {
+        name: "inicio",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
+    },
+     {
+        name: "meio",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
+    },
+     {
+        name: "Fim",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
+    },
+     {
+        name: "inicio",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
+    },
+     {
+        name: "meio",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
+    },
+     {
+        name: "Fim",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
+    },
+    {
+        name: "inicio",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
+    },
+     {
+        name: "meio",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
+    },
+     {
+        name: "Fim",
+        path: ``,
+        imgLink: "https://i.ibb.co/10XvHwP/Recurso.png"
     }
 ];
