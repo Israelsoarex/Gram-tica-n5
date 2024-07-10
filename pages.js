@@ -81,7 +81,7 @@ let pageList = [
     },
     {
         name: "Partícula だけ (dake)",
-        path: "",
+        path: "particulaだけ.html",
         imgLink: 'https://i.ibb.co/p1FFMqj/20240413-154944.jpg'
     },
     {
@@ -110,7 +110,7 @@ let pageList = [
         imgLink: 'https://i.ibb.co/TB5hTMt/20240413-155203.png'
     },
     {
-        name: "Partícula たり (tari-tari)",
+        name: "Partícula たり (tari)",
         path: "",
         imgLink: 'https://i.ibb.co/hssz8NH/20240413-155236.png'
     },
