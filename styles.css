@@ -2,6 +2,7 @@
   --main-color: #043E7D;
   --verde: #009879;
   --azul: #043E7D;
+  --vermelho: #DC3546;
 
   /* Cores e sombras para o tema verde */
   --main-color: #009879;
@@ -169,7 +170,7 @@ header{
     bottom: .8rem;
     left: 1.5rem;
     padding: .5rem;
-    background: #f00;
+    background: var(--vermelho);
     border-radius: .5rem;
     box-shadow:  
     10px 10px 26px #00000099,
@@ -254,6 +255,14 @@ header{
     background: #CBE5FE;
     border: 1px solid #B7D9FD;
     color: #004184;
+}
+#alertDiv {
+    background-color: var(--vermelho);
+    color: #FFF;
+    padding: 1rem; 
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .tdTitle{
     padding: .3rem;
@@ -518,7 +527,7 @@ h3{
     left: 0;
 }
 #frameSpan {
-    background: #f00;
+    background: var(--vermelho);
     color: #fff;
     width: 80%;
     position: absolute;

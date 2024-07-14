@@ -1,4 +1,5 @@
 let mainDiv = document.querySelector("#main");
+let mainCont = document.querySelector(".main")
 let vocabDiv = document.querySelector("#vocabDiv");
 let iframeDiv = document.querySelector("#iframeDiv");
 let pixDiv = document.querySelector("#pixDiv");
@@ -30,10 +31,21 @@ function destacar(frase) {
     // Enquanto houver partículas entre colchetes na frase, substitua todas
     while ((match = novaFrase.match(/\[([^\]]+?)\]/))) {
         let particulaDestacada = match[1];
-        novaFrase = novaFrase.replace(new RegExp(`\\[${particulaDestacada}\\]`, 'g'), `<span style="color: #f00;">${particulaDestacada}</span>`);
+        novaFrase = novaFrase.replace(new RegExp(`\\[${particulaDestacada}\\]`, 'g'), `<span style="color: #DC3546;">${particulaDestacada}</span>`);
     }
     return novaFrase;
 }
+/// criar alerta
+function alertar() {
+    let alertDiv = document.createElement('div');
+    alertDiv.innerText = "Oficialmente, não existem listas definitivas de kanji, vocabulário ou gramática para o JLPT. Por isso não há como garantir quais kanji, palavras ou estruturas gramaticais estarão presentes. A explicação é elaborada com base em dados de testes anteriores e comparações com outras fontes disponíveis."
+    alertDiv.id = "alertDiv";
+    //mainDiv.appendChild(alertDiv);
+    let firstChild = mainCont.firstChild;
+    mainCont.insertBefore(alertDiv, firstChild);
+}
+alertar();
+
 function criaFigura() {
 for (i = 0; i <= estrutura.sentence.length-1; i++) {
 let figure = document.createElement("figure");
