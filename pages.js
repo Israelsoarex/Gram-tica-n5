@@ -86,7 +86,7 @@ let pageList = [
     },
     {
         name: "Partícula けど (kedo)",
-        path: "",
+        path: "particulaけど.html",
         imgLink: 'https://i.ibb.co/jwYhQtV/20240413-155023.webp'
     },
     {

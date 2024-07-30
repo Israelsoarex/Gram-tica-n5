@@ -44,7 +44,10 @@ function alertar() {
     let firstChild = mainCont.firstChild;
     mainCont.insertBefore(alertDiv, firstChild);
 }
-alertar();
+
+if(needAlert) {
+    alertar();
+}
 
 function criaFigura() {
 for (i = 0; i <= estrutura.sentence.length-1; i++) {

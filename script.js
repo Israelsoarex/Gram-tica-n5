@@ -86,3 +86,5 @@ function resetaMemoRec() {
     localStorage.removeItem("recPgIndex");
 }
 
+let needAlert = true;
+
