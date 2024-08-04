@@ -91,7 +91,7 @@ let pageList = [
     },
     {
         name: "Partícula のです (nodesu)",
-        path: "",
+        path: "particulaのです.html",
         imgLink: 'https://i.ibb.co/6JLNbP5/20240413-155055.webp'
     },
     {

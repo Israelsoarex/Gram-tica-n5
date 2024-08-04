@@ -23,11 +23,11 @@ function justOpen() {
         view = 1;
         hamburger.style.transform = "translateX(0)";
         bar.style.background = "#fff";
-        bar.style.color = "#009879";
+        bar.style.color = "var(--main-color)";
     }else {
         view = 0;
         hamburger.style.transform = "translateX(100%)";
-        bar.style.background = "#009879";
+        bar.style.background = "var(--main-color)";
         bar.style.color = "#fff";
         }
 }
