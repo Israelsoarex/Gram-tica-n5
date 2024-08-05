@@ -482,7 +482,7 @@ let pronList = [
 
 let recList = [
     {
-        name: "inicio",
+        name: "Lista de Kanji N5",
         path: `recursos/kanjiN5.html`,
         imgLink: "https://i.ibb.co/Df39RXz/20240805-150227.webp"
     },
