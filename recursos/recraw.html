@@ -12,54 +12,6 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles.css">
     <script src="../pages.js"></script>
-    <style>
-        :root{
-            --main-color: #043E7D;
-  --sombra-escura: #0b56a0; 
-  --sombra-clara: #01477a;
-  --degrade-prim: #0766b7;
-  --degrade-sec: #032d54;
-        }
-        .main {
-            padding: .99rem;
-        }
-       #mainKanji table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem auto;
-            font-size: 16px;
-            text-align: center;
-            color: var(--main-color )
-}
-
-#mainKanji th, #mainKanji td {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-}
-
-#mainKanji th {
-    background-color: var(--main-color);
-    color: #fff;
-}
-
-#mainKanji tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-#mainKanji tr:hover {
-    background-color: #e0e0e0;
-    color: #000;
-}
-caption {
-    font-size: 18px;
-    margin: 10px 0;
-    text-align: center;
-    color: var(--main-color);
-}
-.tbUso td{
-    text-align: left;
-}
-    </style>
 </head>
 <body>
     <header>
@@ -86,21 +38,7 @@ caption {
     </div>
     <!-- main -->
     <div class="main">
-        <img src="https://i.ibb.co/Df39RXz/20240805-150227.webp" alt="Ilustração"></img>
-        <h3 class="titleLine">KANJI N5</h3>
-        <p>Para a preparação para o exame JLPT N5, é essencial dominar os kanjis. Por isto este guia foi elaborado para cobrir todos os kanjis necessários para o teste.</p>
-        <p>O JLPT (Japanese Language Proficiency Test) é um exame amplamente reconhecido para avaliar a proficiência em japonês. O N5 é o primeiro nível significativo, que demonstra uma base sólida na língua. Conhecer os kanjis do N5 prepara para o exame e estabelece uma base fundamental para a compreensão de textos e conversas em japonês.</p>
-        <p>Embora não haja uma lista oficial dos kanjis que aparecerão no teste, geralmente são entre 80 e 100 kanjis. Foram incluídos 112 kanjis para cobrir todas as possibilidades, todos no nível iniciante e comuns em vocabulários.</p>
-        <p>Os kanjis possuem duas leituras: <strong>ONYOMI</strong> (baseada no chinês) e a <strong>KUNYOMI</strong> (baseada no japonês). Onyomi é usada quando os kanjis aparecem juntos, enquanto Kunyomi é usada quando aparecem sozinhos ou com hiragana.</p>
-
-<h3>Dicas para memorizar kanji:</h3>
-<table class="tbUso">
-    <tr><td><strong>Prática Consistente:</strong> A prática diária de kanji reforça o aprendizado.</td></tr>
-    <tr><td><strong>Flash Cards:</strong> Utilizar flashcards ajuda a memorizar significados e leituras.</td></tr>
-    <tr><td><strong>Prática de Escrita:</strong> Escrever kanji à mão pode auxiliar na memorização.</td></tr>
-</table>
-        <div id="mainKanji"></div>
-        <div id="pixDiv"></div>
+    <div id="pixDiv"></div>
     </div>
     <!-- footer -->
     <footer>
@@ -130,7 +68,6 @@ caption {
     <div id="up"><b>↑</b></div>
     <script src="../script.js"></script>
     <script>nivel=1;needAlert=false;</script>
-    <script src="kanjiDataN5.js"></script>
     <script src="../teste.js"></script>
 </body>
 </html>
