@@ -39,6 +39,7 @@ const scrollToTop = ()=>{
 };
 
 document.querySelector("#up").onclick = scrollToTop;
+let nivel = 0;
 
 /// input search
 function buscar() {
@@ -47,7 +48,11 @@ function buscar() {
     if (inputValue.trim() !== '') {
         localStorage.setItem("keyWord", inputValue);
         resetaMemoria();
-        window.location.href = "search.html";
+        if(nivel == 0) {
+            window.location.href = "search.html";
+        }else {
+            window.location.href = "../search.html";
+        }
     }
 }
 

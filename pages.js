@@ -483,8 +483,8 @@ let pronList = [
 let recList = [
     {
         name: "inicio",
-        path: ``,
-        imgLink: "https://i.ibb.co/thFLx3d/20240706-171832.webp"
+        path: `recursos/kanjiN5.html`,
+        imgLink: "https://i.ibb.co/Df39RXz/20240805-150227.webp"
     },
      {
         name: "meio",

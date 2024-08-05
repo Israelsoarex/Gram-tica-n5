@@ -16,7 +16,11 @@ function pixTemplate() {
     topText.innerHTML = `Achou o projeto útil? <br>Clique e contribua!`;
     let pixImg = document.createElement('img');
     pixImg.id = "pixImg";
-    pixImg.src = "pixImg.jpg";
+    if(nivel==0) {
+        pixImg.src = "pixImg.jpg";
+    }else {
+        pixImg.src = "../pixImg.jpg";
+    }
     let downText = document.createElement('div');
     downText.innerHTML = `Leia o código com a <br>câmera do celular.`;
     downText.id = "pixDownText";
