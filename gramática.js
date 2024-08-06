@@ -86,25 +86,27 @@ pgLast.addEventListener("click",()=>{
     location.reload();
     console.log("tá setado");
 });
+let lastPostName = '';
 function lastPost() {
     let a = pageList.length - 1;
     
     while (a >= 0 && !pageList[a].path) {
         a--;
     }
-    if (a >= 0) { // Verifica se encontrou um item válido
+        lastPostName = pageList[a].name;
         lastImgDiv.innerHTML = `<img src="${pageList[a].imgLink}" alt="${pageList[a].name}" loading="lazy" onclick="irProSite('${pageList[a].path}')">
                     <span id="tag">ÚLTIMO POST</span>`;
         squareLast.innerHTML +=`<span class="last"><a href="${pageList[a].path}">${pageList[a].name}</a></span>`;
-    } 
+    
 }
 lastPost();
 function allPost() {
     for (let i = inicio; i <= fim; i++) {
         const pagePath = pageList[i].path;
         const isLocked = pagePath === "";
-
-        square1.innerHTML += `
+        const isLastPost = pageList[i].name === lastPostName;
+        if(!isLastPost) {
+            square1.innerHTML += `
         <div class="square ${isLocked ? 'locked' : ''}">
             <div class="img-last">
                 <img src="${pageList[i].imgLink}" alt="${pageList[i].name}" loading="lazy" ${isLocked ? '' : `onclick="irProSite('${pagePath}')"`}>
@@ -113,9 +115,10 @@ function allPost() {
             ${isLocked ? `
             <div class="overlay">
                 <i class="fa fa-lock"></i>
-                <span>EM DESENVOLVIMENTO</span>
+                <span>A SER PUBLICADO</span>
             </div>` : ''}
         </div>`;
+        }
     }    
 }
 allPost();

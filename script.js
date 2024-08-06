@@ -40,7 +40,7 @@ const scrollToTop = ()=>{
 
 document.querySelector("#up").onclick = scrollToTop;
 let color = 0;
-
+let nivel = 0;
 /// input search
 function buscar() {
     let inputValue = document.querySelector(".search").value;

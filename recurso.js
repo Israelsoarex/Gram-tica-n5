@@ -1,5 +1,4 @@
 //GRAMÁTICA PAGE 
-console.log("9999")
 let square1 = document.querySelector(".square1");
 let square = document.querySelector("#squareLast");
 let lastImgDiv = document.querySelector("#imgLast");
@@ -87,9 +86,13 @@ pgLast.addEventListener("click",()=>{
     location.reload();
     console.log("tá setado");
 });
-
+let lastPostName = '';
 function lastPost() {
     a = recList.length - 1 ;
+    while (a >= 0 && !recList[a].path) {
+        a--;
+    }
+    lastPostName = recList[a].name;
     lastImgDiv.innerHTML = `<img src="${recList[a].imgLink}" alt="nada" loading="lazy" onclick="irProSite('${recList[a].path}')">
                     <span id="tag">ÚLTIMO POST</span>`;
     squareLast.innerHTML +=`<span class="last"><a href="${recList[a].path}">${recList[a].name}</a></span>`;
@@ -99,14 +102,23 @@ lastPost();
 function allPost() {
     
     for(let i = recInicio ; i <= recFim; i++){
-    
-        square1.innerHTML += `
-        <div class="square">
+        const pagePath = recList[i].path;
+        const isLocked = pagePath === "";
+        const isLastPost = recList[i].name === lastPostName;
+        if(!isLastPost) {
+            square1.innerHTML += `
+        <div class="square ${isLocked ? 'locked' : ''}">
         <div class="img-last">
-        <img src="${recList[i].imgLink}" alt="" loading="lazy" onclick="irProSite('${recList[i].path}')">
+        <img src="${recList[i].imgLink}" alt="" loading="lazy" ${isLocked ? '' : `onclick="irProSite('${pagePath}')"`}>
         </div>
         <span class="last"><a href="${recList[i].path}">${recList[i].name}</a></span>
+        ${isLocked ? `
+            <div class="overlay">
+                <i class="fa fa-lock"></i>
+                <span>A SER PUBLICADO</span>
+            </div>` : ''}
         </div>`;
+        }
     }
 }
 allPost();

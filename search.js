@@ -149,16 +149,30 @@ pgLast.addEventListener("click",()=>{
     location.reload();
     console.log("tá setado");
 });
-
+let lastPostName = '';
 function lastPost() {
     if(relatedItems.length == 0) {
         return
     }
     a = relatedItems.length - 1 ;
+    while (a >= 0 && !relatedItems[a].path) {
+        a--;
+    }
+    
+    if(a>=0) {
+    lastPostName = relatedItems[a].name;    
     lastImgDiv.innerHTML =`
     <img src="${relatedItems[a].imgLink}" alt="${relatedItems[a].name}" loading="lazy" onclick="irProSite('${relatedItems[a].path}')">
                     <span id="tag">ÚLTIMO POST</span>`;
      squareLast.innerHTML +=`<span class="last"><a href="${relatedItems[a].path}">${relatedItems[a].name}</a></span>`;
+     } else {
+         square.innerHTML = `<div class="overlay">
+                <i class="fa-solid fa-file-excel"></i>
+                <span>SEM ÚLTIMO POST</span>
+            </div>`
+         
+        
+     }
 }
 lastPost();
 function irProSite(link) {
@@ -193,18 +207,24 @@ function allPost(relInicio,relFim) {
         return
     }
     for(let i = relInicio ; i <= relFim; i++){
-    
-        square1.innerHTML += `
-        <div class="square">
+        const pagePath = relatedItems[i].path;
+        const isLocked = pagePath === "";
+        const isLastPost = relatedItems[i].name === lastPostName;
+        if(!isLastPost) {
+            square1.innerHTML += `
+        <div class="square ${isLocked ? 'locked' : ''}">
         <div class="img-last">
-        <img src="${relatedItems[i].imgLink}" alt="" loading="lazy" onclick="irProSite('${relatedItems[i].path}')">
+        <img src="${relatedItems[i].imgLink}" alt="" loading="lazy" ${isLocked ? '' : `onclick="irProSite('${pagePath}')"`}>
         </div>
         <span class="last"><a href="${relatedItems[i].path}">${relatedItems[i].name}</a></span>
+        ${isLocked ? `
+            <div class="overlay">
+                <i class="fa fa-lock"></i>
+                <span>A SER PUBLICADO</span>
+            </div>` : ''}
         </div>
-        
-        
-        
         `;
+        }
     }
 }
 allPost(relInicio,relFim);
