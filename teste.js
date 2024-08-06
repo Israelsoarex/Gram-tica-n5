@@ -16,10 +16,10 @@ function pixTemplate() {
     topText.innerHTML = `Achou o projeto útil? <br>Clique e contribua!`;
     let pixImg = document.createElement('img');
     pixImg.id = "pixImg";
-    if(nivel==0) {
-        pixImg.src = "pixImg.jpg";
+    if(color==0) {
+        pixImg.src = "https://i.ibb.co/FhCvmnV/pix-verde.webp";
     }else {
-        pixImg.src = "../pixImg.jpg";
+        pixImg.src = "https://i.ibb.co/h70GHWn/pix-azul.webp";
     }
     let downText = document.createElement('div');
     downText.innerHTML = `Leia o código com a <br>câmera do celular.`;

@@ -39,7 +39,7 @@ const scrollToTop = ()=>{
 };
 
 document.querySelector("#up").onclick = scrollToTop;
-let nivel = 0;
+let color = 0;
 
 /// input search
 function buscar() {

@@ -87,22 +87,34 @@ pgLast.addEventListener("click",()=>{
     console.log("tá setado");
 });
 function lastPost() {
-     let a = pageList.length - 1;
-    lastImgDiv.innerHTML = `<img src="${pageList[a].imgLink}" alt="${pageList[a].name}" loading="lazy" onclick="irProSite('${pageList[a].path}')">
+    let a = pageList.length - 1;
+    
+    while (a >= 0 && !pageList[a].path) {
+        a--;
+    }
+    if (a >= 0) { // Verifica se encontrou um item válido
+        lastImgDiv.innerHTML = `<img src="${pageList[a].imgLink}" alt="${pageList[a].name}" loading="lazy" onclick="irProSite('${pageList[a].path}')">
                     <span id="tag">ÚLTIMO POST</span>`;
-    squareLast.innerHTML +=`<span class="last"><a href="${pageList[a].path}">${pageList[a].name}</a></span>`;
+        squareLast.innerHTML +=`<span class="last"><a href="${pageList[a].path}">${pageList[a].name}</a></span>`;
+    } 
 }
 lastPost();
 function allPost() {
-    
-    for(let i = inicio; i <= fim; i++){
-    
+    for (let i = inicio; i <= fim; i++) {
+        const pagePath = pageList[i].path;
+        const isLocked = pagePath === "";
+
         square1.innerHTML += `
-        <div class="square">
-        <div class="img-last">
-        <img src="${pageList[i].imgLink}" alt="${pageList[i].name}" loading="lazy" onclick="irProSite('${pageList[i].path}')">
-        </div>
-        <span class="last"><a href="${pageList[i].path}">${pageList[i].name}</a></span>
+        <div class="square ${isLocked ? 'locked' : ''}">
+            <div class="img-last">
+                <img src="${pageList[i].imgLink}" alt="${pageList[i].name}" loading="lazy" ${isLocked ? '' : `onclick="irProSite('${pagePath}')"`}>
+            </div>
+            <span class="last"><a href="${pagePath}">${pageList[i].name}</a></span>
+            ${isLocked ? `
+            <div class="overlay">
+                <i class="fa fa-lock"></i>
+                <span>EM DESENVOLVIMENTO</span>
+            </div>` : ''}
         </div>`;
     }    
 }
