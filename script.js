@@ -1,10 +1,14 @@
 //VARIÁVEIS
+let color = 0;
+let nivel = 0;
 let bar = document.querySelector("#bar");
 let box = document.querySelector("#box");
+let logoBtn = document.querySelector(".logo");
 let hamburger = document.querySelector(".hamburger");
 let gramLi = document.querySelector(".hamburger ul#ul li:nth-child(1)");
 let pronLi = document.querySelector(".hamburger ul#ul li:nth-child(2)");
 let recLi = document.querySelector(".hamburger ul#ul li:nth-child(3)");
+
 gramLi.addEventListener("click",()=>{
      resetaMemoGram();
 });
@@ -14,7 +18,14 @@ pronLi.addEventListener("click",()=>{
 recLi.addEventListener("click",()=>{
      resetaMemoRec();
 });
-
+logoBtn.addEventListener("click", ()=>{
+    if(nivel == 0) {
+            window.location.href = "index.html";
+        }else {
+           console.log(nivel)
+            window.location.href = "../index.html";
+        }
+});
 view = 0;
 //LISTENERS
 bar.addEventListener("click",justOpen)
@@ -39,8 +50,6 @@ const scrollToTop = ()=>{
 };
 
 document.querySelector("#up").onclick = scrollToTop;
-let color = 0;
-let nivel = 0;
 /// input search
 function buscar() {
     let inputValue = document.querySelector(".search").value;
@@ -50,6 +59,7 @@ function buscar() {
         resetaMemoria();
         if(nivel == 0) {
             window.location.href = "search.html";
+            
         }else {
             window.location.href = "../search.html";
         }

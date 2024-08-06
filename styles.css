@@ -41,6 +41,9 @@ header{
    top: 0;
    z-index: 9999;
 }
+a:has(img.logo){
+    cursor: pointer;
+}
 .logo{
     height: 3rem;
     margin: .5rem;
